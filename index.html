@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./styles.css">
+    
   </head>
   <body>
     <header id="header" class="header">
@@ -83,49 +85,49 @@
       </section>
       <section id="projects" class="projects">
         <div class="container">
-          <h2>Високі стандарти розробки</h2>
-          <p>
+          <h2 class="projects__title">Високі стандарти розробки</h2>
+          <p class="projects__descr">
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
           </p>
-          <a href="#">Детальніше про компанію</a>
-          <img src="./images/standards.png" alt="Пояснення" />
-          <ul>
-            <li>
-              <svg width="30" height="30">
-                <use href="./icons/symbol-defs.svg#icon-web-programming"></use>
+          <a href="#" class="projects__link">Детальніше про компанію</a>
+          <img src="./images/standards.png" alt="Пояснення" class="projects__image"/>
+          <ul class="work-list">
+            <li class="work-list__item">
+              <svg width="30" height="30" class="work-list__icon">
+                <use href="./icons/symbol-defs.svg#icon-web-programming" class="work-list__icon"></use>
               </svg>
-              <span>125</span>
-              <p>Our projects</p>
+              <span class="work-list__number">125</span>
+              <p class="work-list__text">Our projects</p>
             </li>
             <li>
-              <svg width="30" height="30">
-                <use href="./icons/symbol-defs.svg#icon-web-programming"></use>
+              <svg width="30" height="30" class="work-list__icon">
+                <use href="./icons/symbol-defs.svg#icon-web-programming" class="work-list__icon"></use>
               </svg>
-              <span>125</span>
-              <p>Our projects</p>
+              <span class="work-list__number">125</span>
+              <p class="work-list__text">Our projects</p>
             </li>
             <li>
-              <svg width="30" height="30">
-                <use href="./icons/symbol-defs.svg#icon-web-programming"></use>
+              <svg width="30" height="30" class="work-list__icon">
+                <use href="./icons/symbol-defs.svg#icon-web-programming" class="work-list__icon"></use>
               </svg>
-              <span>125</span>
-              <p>Our projects</p>
+              <span class="work-list__number">125</span>
+              <p class="work-list__text">Our projects</p>
             </li>
             <li>
-              <svg width="30" height="30">
-                <use href="./icons/symbol-defs.svg#icon-web-programming"></use>
+              <svg width="30" height="30" class="work-list__icon">
+                <use href="./icons/symbol-defs.svg#icon-web-programming" class="work-list__icon"></use>
               </svg>
-              <span>125</span>
-              <p>Our projects</p>
+              <span class="work-list__number">125</span>
+              <p class="work-list__text">Our projects</p>
             </li>
             <li>
-              <svg width="30" height="30">
-                <use href="./icons/symbol-defs.svg#icon-web-programming"></use>
+              <svg width="30" height="30" class="work-list__icon">
+                <use href="./icons/symbol-defs.svg#icon-web-programming" class="work-list__icon"></use>
               </svg>
-              <span>125</span>
-              <p>Our projects</p>
+              <span class="work-list__number">125</span>
+              <p class="work-list__text">Our projects</p>
             </li>
           </ul>
         </div>
@@ -168,24 +170,30 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2>Наші проекти</h2>
-          <ul>
-            <li>
+      <section class="resume">
+        <div class="container resume__container">
+          <h2 class="resume__title">Наші проекти</h2>
+          <p class="resume__text">
+            Lorem Ipsum - це текст-"риба", що часто 
+            використовується в пресі та веб-дизайні. 
+            Lorem Ipsum є стандартною "рибою" для 
+            текстів на латиниці з початку XVI ст.
+          </p>
+          <ul class="projects-set">
+            <li class="projects-set__item">
               <img src="./images/code.jpg" alt="зображення коду програми" />
             </li>
-            <li>
+            <li class="projects-set__item">
               <img src="./images/code.jpg" alt="зображення коду програми" />
             </li>
-            <li>
+            <li class="projects-set__item">
               <img src="./images/code.jpg" alt="зображення коду програми" />
             </li>
-            <li>
+            <li class="projects-set__item">
               <img src="./images/code.jpg" alt="зображення коду програми" />
             </li>
           </ul>
-          <button type="button">Всі проекти</button>
+          <button type="button" class="button">Всі проекти</button>
         </div>
       </section>
       <section>
