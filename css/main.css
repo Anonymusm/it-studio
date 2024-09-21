@@ -337,11 +337,44 @@ a {
   display: flex;
   align-items: center;
   margin-top: 100px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .specific-container-2 {
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specific-container-2 {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 .specific-container-2 > :first-child {
-  max-width: 500px;
-  margin-right: 400px;
+  max-width: 100px;
+  margin-left: -100px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .specific-container-2 > :first-child {
+    max-width: 500px;
+    margin-right: 100px;
+    margin-left: 2px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specific-container-2 > :first-child {
+    max-width: 1200px;
+    margin-right: 300px;
+    text-align: left;
+  }
 }
 
 .specific_main {
@@ -356,15 +389,44 @@ a {
 
 .specific-list {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .specific-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specific-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 .specific-list_item {
   row-gap: 30px;
   margin-top: 78px;
 }
+@media screen and (min-width: 768px) {
+  .specific-list_item {
+    margin: 15px;
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specific-list_item {
+    margin: 15px;
+    margin-top: 77px;
+  }
+}
 
 .item_image {
   border-radius: 10px;
+  display: block;
+  width: 100%;
 }
 
 .item_desrc {
@@ -401,6 +463,17 @@ a {
   margin-bottom: 47px;
   width: 350px;
   margin-right: 30px;
+  max-width: 250px;
+}
+@media screen and (min-width: 768px) {
+  .item_para {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item_para {
+    max-width: 330px;
+  }
 }
 
 .item_link {
