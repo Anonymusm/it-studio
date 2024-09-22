@@ -99,11 +99,7 @@ a {
 .button {
   color: #FFF;
   text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   border-radius: 30px;
   background-color: #4985FF;
   box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
@@ -281,22 +277,24 @@ a {
 }
 
 .projects {
-  padding-top: 100px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #f6f6f8;
 }
 
 .projects__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.46;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .projects__descr {
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
   line-height: 1.58;
   color: #999;
 }
@@ -318,15 +316,33 @@ a {
   display: block;
   height: 1px;
   width: 100%;
-  margin-top: 90px;
-  margin-bottom: 70px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   background-color: #e0e0e0;
+}
+
+.work-list__item + .work-list__item {
+  margin-top: 30px;
+}
+
+.work-list__number {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.46;
+  color: #000;
+}
+
+.work-list__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.58;
+  color: #999;
 }
 
 .specific {
   display: flex;
   width: 100%;
-  background: linear-gradient(to top, white 20.44% 0%, white 20.44% 50%, #504DC2 50%, #504DC2 100%);
+  background: linear-gradient(to top, white 20.44% 0%, white 20.44% 50%, #504dc2 50%, #504dc2 100%);
   padding-bottom: 85px;
 }
 
@@ -356,35 +372,39 @@ a {
   }
 }
 
-.specific-container-2 > :first-child {
-  max-width: 100px;
-  margin-left: -100px;
+.specific-container-2 > :fist-child {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .specific-container-2 > :first-child {
+  .specific-container-2 > :fist-child {
     max-width: 500px;
-    margin-right: 100px;
     margin-left: 2px;
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  .specific-container-2 > :first-child {
+  .specific-container-2 > :fist-child {
     max-width: 1200px;
-    margin-right: 300px;
     text-align: left;
   }
 }
 
 .specific_main {
-  color: #FFF;
+  color: #fff;
   /* h2 */
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 146.28%; /* 52.661px */
+}
+@media screen and (min-width: 768px) {
+  .specific_main {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specific_main {
+    font-size: 36px;
+    width: 540px;
+    font-weight: 700;
+    line-height: 1.46;
+  }
 }
 
 .specific-list {
@@ -442,7 +462,7 @@ a {
 }
 
 .item_span {
-  color: var(#4985FF);
+  color: var(#4985ff);
   /* h3 */
   font-family: Montserrat;
   font-size: 18px;
@@ -477,7 +497,7 @@ a {
 }
 
 .item_link {
-  color: var(#4985FF);
+  color: var(#4985ff);
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
