@@ -120,18 +120,10 @@ width: 375px;
 }
 
 .item_para {
-  color: var(#999);
-
-  /* p>h2 */
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 158.47%; /* 25.355px */
-  margin-bottom: 47px;
-  width: 350px;
-  margin-right: 30px;
-  max-width: 250px;
+  font-size: 16px;
+  line-height: 1.58;
+  color: #999;
   @media screen and (min-width: 768px) {
     max-width: 250px;
   }
