@@ -5,4 +5,19 @@
     margin: 0 auto;
     background: #f6f6f8;
 }
-
+.footer-list {
+    margin: 0 auto;
+}
+.footer-list__item + .footer-list__item {
+    margin-top: 20px;
+}
+.footer-list__title {
+font-weight: 600;
+font-size: 18px;
+color: #000;
+margin-bottom: 35px;
+text-align: center;
+}
+.contacts-list__item + .contacts-list__item {
+    margin-top: 20px;
+}
