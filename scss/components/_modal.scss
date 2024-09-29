@@ -1,0 +1,56 @@
+ .nav-modal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     padding: 32px;
+     background-color: grey;
+     z-index: 999;
+     transform: translateX(0%);
+     transition: transform 250ms ease-in-out;
+    background-image: url("../images/header-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+ }
+
+ .nav-modal.is-open {
+     transform: translateX(100%);
+ }
+
+ .modal-button {
+     width: 40px;
+     height: 40px;
+     position: absolute;
+        top: 15px;
+            right: 80px;
+    //  background: none;
+     border: none;
+ }
+ .header-burger-svg {
+    width: 45px;
+        height: 45px;
+        fill: white;
+ }
+
+ .mobile-menu__list {
+     display: flex;
+     flex-direction: column;
+        gap: 50px;
+            padding-top: 90px;
+            padding-left: 20px;
+ }
+ .mobile-menu__link {
+    font-weight: 500;
+        color: #fff;
+ }
+ .modal-button-close {
+     background-color: rgba(0, 0, 0, 0);
+     border: none;
+     position: absolute;
+     top: 11px;
+     right: 15px;
+     width: 30px;
+     height: 30px;
+     cursor: pointer;
+ }

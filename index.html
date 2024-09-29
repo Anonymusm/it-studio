@@ -23,6 +23,11 @@
   <body>
     <header id="header" class="header">
       <div class="container header-position">
+        <button type="button" class="modal-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header-burger-svg">
+            <use href="./icons/symbol-defs.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
         <div class="nav__wrapper">
           <nav class="nav">
             <ul class="menu">
@@ -395,5 +400,41 @@
         <small>(с) 2019. Всі права захищені</small>
       </div>
     </footer>
+     <div class="nav-modal is-open js-menu-container">
+      <button type="button" class="modal-button js-close-menu">
+        <svg>
+          <use href="./sprite/symbol-defs.svg#"></use>
+        </svg> 
+      </button>
+      <!-- <ul class=" nav-modal-list">
+          <li class="modal-list-item"><a href="#">Головна</a></li>
+          <li class="modal-list-item"><a href="#">Наші проекти</a></li>
+          <li class="modal-list-item"><a href="#">Послуги</a></li>
+          <li class="modal-list-item"><a href="#">Новини</a></li>
+          <li class="modal-list-item"><a href="#">Контакти</a></li>
+        </ul> -->
+         <!-- <div class="nav__wrapper"> -->
+          <!-- <nav class="nav"> -->
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Головна</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Наші проекти</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Послуги</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Новини</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+          <!-- </nav> -->
+        <!-- </div> -->
+    </div>
+<script src="./js/mobile-menu.js"></script>
   </body>
 </html>
